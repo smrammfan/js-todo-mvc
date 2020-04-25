@@ -21,14 +21,15 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" style="height:50px;">Write your task</span>
                     </div>
-                    <input class="form-control" style="height:50px;"></input>
+                    <input id = "getTaskInput" class="form-control" style="height:50px;"></input>
                  </div>
-                 <button type="button" class="btn btn-default btn-lg add-task-button">Add task</button>
+                 <button id = "addTaskButton" type="button" class="btn btn-default btn-lg task-button">Add task</button>
             </div>
             <div class="tasks-table row">
-               <table class = "table col-12"><tr><td><p class = "display-4 text">There will be your tasks here</p></td></tr></table>
+               <table id = "main-table" class = "table col-12"><tr><td><p class = "display-4 text">There will be your tasks here</p></td></tr></table>
             </div>
         </article>
     </div>
+    <script type = "module" src="./js/main.js"></script>
 </body>
 </html>

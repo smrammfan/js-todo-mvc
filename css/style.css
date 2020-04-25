@@ -16,7 +16,7 @@ header {
     background-color: lightgrey;
 }
 
-.add-task-button {
+.task-button {
     background-color: white !important;
 }
 
@@ -25,7 +25,8 @@ header {
 }
 
 .tasks-table {
-    margin-top: 70px;
+    margin-top: 50px;
     text-align: center;
+    background-color: honeydew !important;
 }
 
