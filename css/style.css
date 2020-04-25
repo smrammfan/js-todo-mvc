@@ -2,12 +2,12 @@
 
 header {
     min-height: 100px;
-    background-color: lavenderblush;
+    background-color: lightslategray;
     text-align: center;
 }
 
 .text {
-    color: cornflowerblue !important;
+    color: black !important;
     font-family: 'Baloo Tamma 2' !important;
 }
 .main {
