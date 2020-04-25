@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+header {
+    min-height: 100px;
+    background-color: lavenderblush;
+    text-align: center;
+}
+
+.text {
+    color: cornflowerblue !important;
+    font-family: 'Baloo Tamma 2' !important;
+}
+.main {
+    padding: 30px;
+    min-height: 600px;
+    background-color: lightgrey;
+}
+
+.add-task-button {
+    background-color: white !important;
+}
+
+.input-group-text{
+    background-color: snow !important;
+}
+
+.tasks-table {
+    margin-top: 70px;
+    text-align: center;
+}
+
