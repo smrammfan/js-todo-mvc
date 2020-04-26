@@ -4,6 +4,7 @@ export default class Controller {
         this.view = view;
         this.initOnModelChange();
         document.querySelector('#addTaskButton').addEventListener('click', (e)=>this.addTask(e));
+        document.querySelector('#getTaskInput').addEventListener('keyup', (e)=>this.keyUpInInput(e));
         document.querySelector('#main-table').addEventListener('click', (e)=>this.changeTask(e));
     }
 
@@ -14,6 +15,12 @@ export default class Controller {
             return;
         }    
         this.model.addTask(task);
+    }
+
+    keyUpInInput(event){
+        if(event.keyCode === 13) {
+            this.addTask(event);
+        }
     }
     
     changeTask(e){
