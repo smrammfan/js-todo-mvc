@@ -19,13 +19,16 @@ export default class Controller {
     changeTask(e){
         e = e || window.event;
         let target = e.target || e.srcElement;
+        let id = target.name;
         if(target.tagName == 'INPUT'){
-            let id = target.name;
             this.model.clickCheckbox(id);
             this.view.showAllTasks(this.model.tasks);
-        }else if(target.id == 'delButtons'){
-            let id = target.name;
+        }else if(target.id == 'delButton'){
             this.model.deleteTask(id);
+        }else if(target.id == 'editButton'){
+            let newText = this.view.getText("Write new text");
+            this.model.editTask(id, newText);
+            this.view.showAllTasks(this.model.tasks);
         }
     }
 

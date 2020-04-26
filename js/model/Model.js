@@ -20,6 +20,11 @@ export default class Model {
         this.tasks[taskIndex].changeWasDone();
     }
 
+    editTask(id, newText){
+        const taskIndex = this.tasks.findIndex((task) => parseInt(task.id) === parseInt(id));
+        this.tasks[taskIndex].task = newText;
+    }
+
     rewriteId(){
         for(let i = 0; i < this.tasks.length; i++){
             this.tasks[i].id = i + 1;

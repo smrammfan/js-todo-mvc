@@ -21,4 +21,12 @@ export default class View {
     setInputText(text){
         document.getElementById('getTaskInput').value = text;
     }
+
+    printMessage(message){
+        alert(message);
+    }
+
+    getText(message){
+        return prompt(message);
+    }
 }
